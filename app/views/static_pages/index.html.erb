@@ -1,0 +1,18 @@
+<% provide(:title, 'Home') %>
+
+<header class="hero text-center">
+  <div class="container">
+
+    <div class="hero--info">
+      <div class="hero-header">
+        <h1 class="hero--info__header">Skowars is All You Need</h1>
+        <p class="lead">Need a sponsor for your education?</p>
+      </div>
+
+      <ul class="list-inline">
+        <li><%= link_to 'I want to sponsor', new_member_path(:type => "sponsor"), class: "btn" %></li>
+        <li><%= link_to 'I want to be a skowar', new_member_path(:type => "skowar"), class: "btn btn-secondary" %></li>
+      </ul>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,9 @@
+<h1>Skowar</h1>
+
+<p>Hi <%= @user.first_name %>,</p>
+
+<p>
+  Welcome to the Skowar! Click on the link below to activate your account:
+</p>
+
+<%= link_to "Activate", edit_account_activation_url(@user, email: @user.email, token: @user.activation_digest) %>

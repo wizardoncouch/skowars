@@ -1,0 +1,12 @@
+<% provide(:title, 'Sign-up') %>
+<div class="container">
+  <div class="row">
+    <% if flash[:success] %>
+        <div class="alert alert-success">Sign-up successful. An email is sent to you to activate your account before you can sign-in</div>
+    <% else %>
+        <script type="text/javascript">
+            window.location.href="/signin"
+        </script>
+    <% end %>
+  </div>
+</div>
